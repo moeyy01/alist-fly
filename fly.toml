@@ -1,6 +1,6 @@
-# fly.toml file generated for alist-moeyy on 2023-04-30T21:26:58+08:00
+# fly.toml file generated for moeyy-alist on 2023-05-04T21:41:25+08:00
 
-app = "alist-moeyy"
+app = "moeyy-alist"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
@@ -35,3 +35,7 @@ processes = []
     interval = "15s"
     restart_limit = 0
     timeout = "2s"
+    
+[mounts]
+destination = "/opt/alist/data"
+source = "data"
